@@ -15,10 +15,12 @@ public class QueryProcessor {
            return "Philipp";
         } else if (query.contains("plus")){
             String[] a = query.split(" ");
-            int res = Integer.parseInt(a[2]) + Integer.parseInt(a[4]);
+            int res = Integer.parseInt(a[3]) + Integer.parseInt(a[5]);
             return "" + res;
         }
-        else if (query.contains("plus")){
+        else if (query.contains("largest")){
+            String[] a = query.split(": ");
+            String[] b = a[1].split("");
             return "";
         }
         else {

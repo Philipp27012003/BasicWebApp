@@ -13,8 +13,16 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
            return "Philipp";
-        } else { // TODO extend the programm here
+        } else if (query.contains("plus")){
+            String[] a = query.split(" ");
+            int res = Integer.parseInt(a[2]) + Integer.parseInt(a[4]);
+            return "" + res;
+        }
+        else if (query.contains("plus")){
             return "";
+        }
+        else {
+            return"";
         }
     }
 }

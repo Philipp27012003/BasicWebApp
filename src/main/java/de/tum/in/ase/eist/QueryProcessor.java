@@ -31,6 +31,11 @@ public class QueryProcessor {
             }
             return Arrays.stream(res.toArray()).mapToInt(r -> (int) r).max() + "";
         }
+        else if (query.contains("multiplied")) {
+            String [] a = query.split(" ");
+            int res = Integer.parseInt(a[3]) + Integer.parseInt(a[6]);
+            return res + "";
+        }
         else {
             return"";
         }
